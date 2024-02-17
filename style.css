@@ -12,3 +12,12 @@
         border-bottom: 3px solid var(--primary-700, #1DD100);
         background: var(--base-white, #FFF);
 }
+main{
+    border-radius: 88px 88px 0px 0px;
+        border-top: 2px solid var(--primary-700, #1DD100);
+        background: #F7F8F8;
+}
+#sits{
+    border-radius: 12px;
+        background: rgba(29, 209, 0, 0.15);
+}
