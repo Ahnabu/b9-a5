@@ -21,3 +21,17 @@ main{
     border-radius: 12px;
         background: rgba(29, 209, 0, 0.15);
 }
+hr{
+    
+    text-decoration:1px dashed rgba(3, 7, 18, 0.20);
+    
+    height: 90%;
+    margin: 15px, auto;
+}
+.passenger-input> input{
+    border-radius: 12px;
+        border: 1px solid rgba(3, 7, 18, 0.10);
+}
+.term>p{
+    text-decoration: underline;
+}
