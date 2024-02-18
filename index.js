@@ -91,9 +91,9 @@ for (const seat of seats) {
                 couponBtn();
                 
             }
-            nextHandler();
-            continueHandler();
+           
         }
     })
 }
 
+continueHandler();
