@@ -40,7 +40,7 @@
 </head>
 
 <body>
-    <div class="">
+    <div class="" id="fullContent">
     <header style="max-width: 1170px; " class="mx-auto">
         <!-- navbar -->
         <div class="navbar bg-base-100 font-Raleway">
@@ -375,25 +375,31 @@
                     <hr>
                     <div class="flex justify-between text-Secondary py-4">
                         <p>Total Price</p>
-                        <p>BDT 00</p>
+                        <p >BDT <span id="total-price">00</span></p>
                     </div>
-                    <label class="input input-bordered flex items-center gap-2">
-                        <input type="text" class="grow bg-white" placeholder="Have any copupon?" />
-                        <button class="bg-Primary text-white font-bold py-2 px-4 rounded " disabled>Apply</button>
+                    <label class="input input-bordered flex items-center gap-2" id="input-btn">
+                        <input type="text" class="grow bg-white" placeholder="Have any coupon?" id="coupon"/>
+                        <button class="bg-Primary text-white font-bold py-2 px-4 rounded " id="apply-btn" disabled>Apply</button>
                     </label>
+                    <div class="hidden discount" id="discount">
+                    <div class="flex justify-between text-Secondary py-4 " >
+                        <p>Discount</p>
+                        <p>BDT <span id="discounted">00</span> </p>
+                    </div>
+                    </div>
                     <div class="flex justify-between text-Secondary py-4">
                         <p>Grand Total</p>
-                        <p>BDT 00</p>
+                        <p>BDT <span id="Grand-total">00</span> </p>
                     </div>
                 </div>
                 <div class="passenger-input flex flex-col mt-6 ">
                     <label for="input">Passenger Name*</label>
                     <input type="text" placeholder="Enter your name" class=" h-12 px-3">
                     <label for="input">Phone Number*</label>
-                    <input type="number" placeholder="Enter your phone number" class=" h-12 px-3">
+                    <input type="number" placeholder="Enter your phone number" class=" h-12 px-3" id="phone">
                     <label for="input">Email ID*</label>
                     <input type="email" placeholder="Enter your email id" class=" h-12 px-3">
-                    <button class="bg-Primary text-white font-bold py-2 px-4 rounded mt-6" disabled>Next</button>
+                    <button class="bg-Primary text-white font-bold py-2 px-4 rounded mt-6" id="next-btn">Next</button>
                     <div class="text-Secondary text-opacity-60 term flex justify-around mt-6">
                         <p>Terms and Conditions</p>
                         <p>Cancellation Policy</p>
@@ -430,7 +436,7 @@
     </footer>
     </div>
 
-    <div class="h-[100vh] bg-[#F2F1F1] lg:py-40 hidden">
+    <div class="h-[100vh] bg-[#F2F1F1] lg:py-40 hidden" id="success">
         <div class="card w-[580px] h-96 bg-white shadow-xl mx-auto ">
             <figure class="px-10 pt-10">
                 <img src="B9A5-smart-ticketing/images/success.png" alt=""
@@ -443,7 +449,7 @@
                 </h2>
                 <p class="text-xl">Shortly you will find a confirmation in your email.</p>
                 <div class="card-actions">
-                    <button class="btn btn-primary bg-Primary text-white font-bold border-none">Continue</button>
+                    <button class="btn btn-primary bg-Primary text-white font-bold border-none" id="continue-btn">Continue</button>
                 </div>
             </div>
         </div>
