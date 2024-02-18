@@ -52,7 +52,10 @@ function couponBtn() {
     })
 }
 function nextHandler() {
-   
+    if (phon.value === "" || seatArr.length===0) {
+        
+        return false;
+    }
     nextBtn.addEventListener('click', function () {
         document.getElementById('fullContent').classList.add('hidden');
         document.getElementById('success').classList.remove('hidden');
