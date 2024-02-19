@@ -51,13 +51,7 @@ function couponBtn() {
     
     })
 }
-function nextHandler() {
-    if (phon.value === "" || seatArr.length===0) {
-        
-        return false;
-    }
-    
-}
+
 function continueHandler() {
     continueBtn.addEventListener('click', function () {
         document.getElementById('fullContent').classList.remove('hidden');
@@ -91,7 +85,10 @@ for (const seat of seats) {
     })
 }
 nextBtn.addEventListener('click', function () {
-    nextHandler();
+    if (phon.value === "" || seatArr.length === 0) {
+
+        return false;
+    }
     document.getElementById('fullContent').classList.add('hidden');
     document.getElementById('success').classList.remove('hidden');
 
