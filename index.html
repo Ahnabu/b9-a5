@@ -11,7 +11,10 @@
     <script src="https://kit.fontawesome.com/af18d1a71f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:wght@100..900&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <style>
         .font-Inter {
@@ -20,6 +23,9 @@
 
         .font-Raleway {
             font-family: "Raleway", sans-serif;
+        }
+        .font-roboto{
+            font-family: "Roboto", sans-serif;
         }
     </style>
     <script>
@@ -122,8 +128,8 @@
             <p class="text-4xl font-bold text-center mt-10">Best offers for you</p>
             <div class="flex justify-around mt-8">
 
-                <div class="flex bg-[#FFBF0F] text-center font-Inter rounded-3xl ">
-                    <div class="text-[#030712] my-auto p-7">
+                <div class="flex bg-[#FFBF0F] text-start font-Inter rounded-3xl ">
+                    <div class="text-[#030712] my-auto p-7 ">
                         <h2 class="text-4xl font-black">15% OFF</h2>
                         <p class="text-2xl text-opacity-60">on your next purchase</p>
                         <p class="text-opacity-45">use by January 2024</p>
@@ -134,7 +140,7 @@
                         <p class="text-[#030712] text-opacity-45">Coupon Code</p>
                     </div>
                 </div>
-                <div class="flex bg-[#F78C9C] text-center font-Inter rounded-3xl">
+                <div class="flex bg-[#F78C9C] text-start font-Inter rounded-3xl">
                     <div class="text-[#030712] my-auto p-7">
                         <h2 class="text-4xl font-black">20% OFF</h2>
                         <p class="text-2xl text-opacity-60">on your next purchase</p>
@@ -223,7 +229,7 @@
                 <!-- main seat -->
                 <div>
                     <div class=" flex justify-end my-6">
-                        <button class="btn bg-Secondary bg-opacity-10"> <i class="fa-solid fa-gear px-5 "></i></button>
+                        <button class="btn bg-Secondary bg-opacity-10 px-5"> <img src="B9A5-smart-ticketing/images/tabler-icon-steering-wheel.png" alt=""></button>
                     </div>
                     <div>
                         <div class="flex justify-between my-6">
@@ -401,7 +407,7 @@
                     <input type="email" placeholder="Enter your email id" class=" h-12 px-3" >
                     <button class="bg-Primary text-white font-bold py-2 px-4 rounded mt-6" id="next-btn" onclick=" nextHandler();">Next</button>
                     <div class="text-Secondary text-opacity-60 term flex justify-around mt-6">
-                        <p>Terms and Conditions</p>
+                        <p class="pr-4">Terms and Conditions</p>
                         <p>Cancellation Policy</p>
                     </div>
                 </div>
@@ -438,16 +444,16 @@
 
     <div class="h-[100vh] bg-[#F2F1F1] lg:py-40 hidden" id="success">
         <div class="card w-[580px] h-96 bg-white shadow-xl mx-auto ">
-            <figure class="px-10 pt-10">
+            <figure class="px-10 pt-10 object-cover">
                 <img src="B9A5-smart-ticketing/images/success.png" alt=""
                     class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
                 <h2 class="card-title text-2xl text-Primary">Success</h2>
-                <h2 class="card-title text-xl">Thank you for Booking Our Bus Seats.
+                <h2 class="card-title text-xl font-roboto">Thank you for Booking Our Bus Seats.
                 We are working hard to find the best service and deals for you.
                 </h2>
-                <p class="text-xl">Shortly you will find a confirmation in your email.</p>
+                <p class="text-xl font-roboto">Shortly you will find a confirmation in your email.</p>
                 <div class="card-actions">
                     <button class="btn btn-primary bg-Primary text-white font-bold border-none" id="continue-btn">Continue</button>
                 </div>

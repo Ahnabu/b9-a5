@@ -56,11 +56,6 @@ function nextHandler() {
         
         return false;
     }
-    nextBtn.addEventListener('click', function () {
-        document.getElementById('fullContent').classList.add('hidden');
-        document.getElementById('success').classList.remove('hidden');
-
-    })
     
 }
 function continueHandler() {
@@ -86,7 +81,7 @@ for (const seat of seats) {
             seat.disabled = true;
             grandTotal.innerText = (selectedSeat * 550)
             if (seatArr.length === 4) {
-                alert('You reached maximum number');
+                alert('You are reaching maximum number');
                 applyBtn.removeAttribute("disabled");
                 couponBtn();
                 
@@ -95,5 +90,10 @@ for (const seat of seats) {
         }
     })
 }
+nextBtn.addEventListener('click', function () {
+    nextHandler();
+    document.getElementById('fullContent').classList.add('hidden');
+    document.getElementById('success').classList.remove('hidden');
 
+})
 continueHandler();
